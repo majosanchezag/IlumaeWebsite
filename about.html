@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre Nosotras · Ilumae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body class="bg-cream text-graphite">
+  <!-- ===== Navbar ===== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__placeholder">ILUMAE</div>
+      </a>
+      <nav class="menu">
+        <a href="index.html" class="menu__link">Home</a>
+        <a href="inventory.html" class="menu__link">Inventory</a>
+        <a href="bestsellers.html" class="menu__link">Best Sellers</a>
+        <a href="about.html" class="menu__link is-active">About Us</a>
+      </nav>
+      <button class="cart" aria-label="Ver carrito">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M7 4h-2l-1 2v2h2l3.6 7.59-1.35 2.44A2 2 0 0 0 10 20h10v-2H10.42l.93-1.68H18a2 2 0 0 0 1.79-1.11l3.58-7.16A1 1 0 0 0 22.5 6H7.21L6.27 4.55A1 1 0 0 0 5.4 4H3V2h2.4a3 3 0 0 1 2.54 1.45L9 6h12l-3 6H10.6" fill="currentColor"/></svg>
+        <span class="cart__badge" data-cart-count>0</span>
+      </button>
+      <button class="menu__toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Sobre Ilumae</h1>
+      <p class="page-sub">Velas creadas desde el corazón, inspiradas en la calma y los pequeños rituales.</p>
+    </div>
+  </section>
+
+  <!-- ===== About content ===== -->
+  <section class="about">
+    <div class="container about__wrap">
+      <div class="about__card">
+        <h2 class="h3">Nuestra historia</h2>
+        <p>
+          Ilumae nació del amor por los detalles y los momentos que nos invitan a pausar. Somos dos amigas que soñamos con compartir la calidez de una vela encendida: ese instante donde el aroma transforma el ambiente y nos recuerda respirar.
+        </p>
+        <p>
+          Cada vela es hecha a mano, con ingredientes naturales, mechas de algodón y fragancias elegidas con intención. Creemos que los rituales cotidianos pueden ser bellos y que la luz, el color y el aroma tienen el poder de reconectar.
+        </p>
+        <p>
+          Más que un producto, Ilumae es una experiencia sensorial que celebra lo artesanal y lo auténtico. Cada vela busca acompañarte en tus momentos de calma, inspiración y conexión contigo misma.
+        </p>
+        <a href="inventory.html" class="btn btn--primary" style="margin-top:12px">Ver colección</a>
+      </div>
+      <div class="about__img">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Velas artesanales Ilumae en mesa de trabajo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="brand__placeholder brand__placeholder--sm">ILUMAE</div>
+        <p class="muted">© <span id="year"></span> Ilumae. Hecho con cariño.</p>
+      </div>
+      <nav class="footer__menu">
+        <a href="inventory.html">Inventory</a>
+        <a href="bestsellers.html">Best Sellers</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="footer__meta">
+        <a href="#" class="muted">Términos</a>
+        <a href="#" class="muted">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventario · Ilumae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body class="bg-cream text-graphite">
+  <!-- ===== Navbar ===== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__placeholder">ILUMAE</div>
+      </a>
+      <nav class="menu">
+        <a href="index.html" class="menu__link">Home</a>
+        <a href="inventory.html" class="menu__link is-active">Inventory</a>
+        <a href="bestsellers.html" class="menu__link">Best Sellers</a>
+        <a href="about.html" class="menu__link">About Us</a>
+      </nav>
+      <button class="cart" aria-label="Ver carrito">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+          <path d="M7 4h-2l-1 2v2h2l3.6 7.59-1.35 2.44A2 2 0 0 0 10 20h10v-2H10.42l.93-1.68H18a2 2 0 0 0 1.79-1.11l3.58-7.16A1 1 0 0 0 22.5 6H7.21L6.27 4.55A1 1 0 0 0 5.4 4H3V2h2.4a3 3 0 0 1 2.54 1.45L9 6h12l-3 6H10.6" fill="currentColor"/></svg>
+        <span class="cart__badge" data-cart-count>0</span>
+      </button>
+      <button class="menu__toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== Header ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Inventario completo</h1>
+      <p class="page-sub">Descubre nuestras velas artesanales, creadas con amor y fragancias únicas.</p>
+    </div>
+  </section>
+
+  <!-- ===== Catálogo ===== -->
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__grid">
+        <!-- Producto 1 -->
+        <article class="product">
+          <img class="product__img" src="https://images.unsplash.com/photo-1504548840739-580b10ae7715?q=80&w=1200&auto=format&fit=crop" alt="Vela Citrus Bloom">
+          <div class="product__body">
+            <h3 class="product__title">Citrus Bloom</h3>
+            <div class="product__meta">
+              <span class="product__price">$220 MXN</span>
+              <span>180 g · ~35 h</span>
+            </div>
+            <p>Notas cítricas brillantes con flores suaves. Perfecta para energizar el día.</p>
+            <div class="product__actions">
+              <button class="btn btn--primary btn-add">Añadir al carrito</button>
+            </div>
+          </div>
+        </article>
+        <!-- Producto 2 -->
+        <article class="product">
+          <img class="product__img" src="https://images.unsplash.com/photo-1500043357865-c6b8827edfef?q=80&w=1200&auto=format&fit=crop" alt="Vela Cozy Vanilla">
+          <div class="product__body">
+            <h3 class="product__title">Cozy Vanilla</h3>
+            <div class="product__meta">
+              <span class="product__price">$240 MXN</span>
+              <span>220 g · ~40 h</span>
+            </div>
+            <p>Vainilla cremosa con ámbar y musk. Ideal para espacios acogedores.</p>
+            <div class="product__actions">
+              <button class="btn btn--primary btn-add">Añadir al carrito</button>
+            </div>
+          </div>
+        </article>
+        <!-- Producto 3 -->
+        <article class="product">
+          <img class="product__img" src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=1200&auto=format&fit=crop" alt="Vela Forest Calm">
+          <div class="product__body">
+            <h3 class="product__title">Forest Calm</h3>
+            <div class="product__meta">
+              <span class="product__price">$260 MXN</span>
+              <span>220 g · ~40 h</span>
+            </div>
+            <p>Notas de madera, pino y hierbas suaves. Crea una atmósfera de bosque.</p>
+            <div class="product__actions">
+              <button class="btn btn--primary btn-add">Añadir al carrito</button>
+            </div>
+          </div>
+        </article>
+        <!-- Producto 4 -->
+        <article class="product">
+          <img class="product__img" src="https://images.unsplash.com/photo-1497636577773-f1231844b336?q=80&w=1200&auto=format&fit=crop" alt="Vela Amber Sunset">
+          <div class="product__body">
+            <h3 class="product__title">Amber Sunset</h3>
+            <div class="product__meta">
+              <span class="product__price">$250 MXN</span>
+              <span>200 g · ~38 h</span>
+            </div>
+            <p>Ámbar cálido con notas dulces de vainilla y durazno.</p>
+            <div class="product__actions">
+              <button class="btn btn--primary btn-add">Añadir al carrito</button>
+            </div>
+          </div>
+        </article>
+        <!-- Producto 5 -->
+        <article class="product">
+          <img class="product__img" src="https://images.unsplash.com/photo-1504194104404-433180773017?q=80&w=1200&auto=format&fit=crop" alt="Vela Floral Dream">
+          <div class="product__body">
+            <h3 class="product__title">Floral Dream</h3>
+            <div class="product__meta">
+              <span class="product__price">$230 MXN</span>
+              <span>180 g · ~35 h</span>
+            </div>
+            <p>Flores silvestres con un toque de miel. Dulce, suave y natural.</p>
+            <div class="product__actions">
+              <button class="btn btn--primary btn-add">Añadir al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="brand__placeholder brand__placeholder--sm">ILUMAE</div>
+        <p class="muted">© <span id="year"></span> Ilumae. Hecho con cariño.</p>
+      </div>
+      <nav class="footer__menu">
+        <a href="inventory.html">Inventory</a>
+        <a href="bestsellers.html">Best Sellers</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="footer__meta">
+        <a href="#" class="muted">Términos</a>
+        <a href="#" class="muted">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
